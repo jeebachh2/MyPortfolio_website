@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    max-width: 1400px;
+    background-color: #eeeff1;
+    margin: 0 auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+
+    .navbarHeading {
+        color: #1a1c20;
+        font-size: 22px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .iconSectionContainer {
+        
+        a {
+            margin: 0px 10px;
+            text-decoration: none;
+            color: #1a1c20;
+
+            span {
+                margin-left: 5px;
+            }
+
+        }
+        .emailButton {
+            color:#fff;
+            background-color:#1a1c20;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.intro-section {
+    display: flex;
+    margin: 50px 0px 100px 0px;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 50px;
+
+    .intro-section-contant {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 45px;
+        }
+        p{}
+        .links{
+            margin-top: 25px;
+
+            a{
+                display: inline-block;
+                padding: 5px 10px;
+                border: 2px solid #4a76ee;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                transition: .1s;
+                text-decoration: none;
+                color: #4a76ee;
+            }
+        }
+
+    }
+    .profile-image {
+        img {
+            
+            width: 350px;
+            border-radius: 50%;
+
+        }
+    }
+
+}
+
+.skillssection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+    
+    .dev-skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .cells {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 200px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1.5px solid #d3d3d3;
+            border-radius: 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+                border-radius: 2px;
+            }
+        }
+    }
+}
+
+.testimonySection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .testimonyContantContainer {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        .testimonyImageContainer {
+            img{
+                width: 200px;
+                aspect-ratio: 1/1;
+                object-fit:contain;
+                margin-bottom: 10px;
+                border-radius: 50%;
+            }
+            .testimony-image-header{
+                font-weight: 600;   
+            }
+            text-align: center;
+        }
+        .testimonytextContainer{
+            flex: 1;
+        }
+    }
+
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .contactContentContainer {
+        display: flex;
+        gap: 50px;
+
+        .contactTextContent {
+            flex: 1;
+        }
+        .contactFormContent {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                border: 2px solid #4a76ee;
+                background-color: transparent;
+                padding: 10px;
+                margin-bottom: 15px;
+                outline: none;
+               
+            }
+            textarea {
+                 border: 2px solid #4a76ee;
+                background-color: transparent;
+                padding: 10px;
+                margin-bottom: 15px;
+                outline: none;
+
+            }
+            button {
+                font-size: 16px;
+               
+                color: #fff;
+                background-color:#4a76ee;
+                border: none;
+                height: 50px;
+                cursor: pointer;
+                transition: 0.1s;
+            }
+        }
+
+    }
+}
+
+@media (max-width:740px) {
+       .intro-section {
+        flex-direction: column-reverse;
+        .intro-section-contant {
+            h2 {
+                font-size: 30px;
+            }
+           
+        }
+        .profile-image {
+                img {
+                    width: 300px;
+                }
+            } 
+    }
+
+     .testimonySection {
+        
+        align-items: center;
+        .testimonyContantContainer {
+            flex-direction: column;
+        }
+    }
+
+      .contactSection {
+        align-items: center;
+        .contactContentContainer {
+            flex-direction: column;
+        }
+    }
+
+    
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0px 20px;
+
+        .iconSectionContainer{
+            span{
+                display: none;
+            }
+            .emailBtn {
+                background-color: transparent;
+                padding: 0px;
+                color: #1a1c20;
+            }
+            a {
+                font-size: 22px;
+            }
+        }
+    }
+    .intro-section {
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+        .intro-section-contant {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        
+    }
+    .skillssection {
+        padding: 0px 20px;
+    }
+    .testimonySection {
+        padding: 0px 20px;
+        align-items: center;
+        .testimonyContantContainer {
+            flex-direction: column;
+        }
+
+    }
+    .contactSection {
+        padding: 0px 20px;
+        align-items: center;
+        .contactContentContainer {
+            flex-direction: column;
+        }
+    }
+}
