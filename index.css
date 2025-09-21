@@ -60,7 +60,7 @@ body {
         h2 {
             font-size: 45px;
         }
-        p{}
+        
         .links{
             margin-top: 25px;
 
@@ -134,40 +134,59 @@ body {
     }
 }
 
-.testimonySection {
+
+.projects {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
     padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     h2 {
+        text-align: center;
         font-size: 35px;
-        margin-bottom: 30px;
     }
-    .testimonyContantContainer {
+
+    p {
+        margin-bottom: 20px;
+    }
+    
+    /* .dev-project-container {
         display: flex;
-        gap: 50px;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        overflow: hidden;
 
-        .testimonyImageContainer {
-            img{
-                width: 200px;
-                aspect-ratio: 1/1;
-                object-fit:contain;
-                margin-bottom: 10px;
-                border-radius: 50%;
-            }
-            .testimony-image-header{
-                font-weight: 600;   
-            }
-            text-align: center;
-        }
-        .testimonytextContainer{
-            flex: 1;
-        }
-    }
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1.5px solid #d3d3d3;
+            border-radius: 5px;
 
+
+            .pic {
+                width: 300px;
+                height: 200px;
+                object-fit: contain;
+                border-radius: 2px;
+            }
+        }
+    } */
 }
+
 
 .contactSection{
     display: flex;
@@ -238,13 +257,7 @@ body {
             } 
     }
 
-     .testimonySection {
-        
-        align-items: center;
-        .testimonyContantContainer {
-            flex-direction: column;
-        }
-    }
+  
 
       .contactSection {
         align-items: center;
@@ -289,14 +302,7 @@ body {
     .skillssection {
         padding: 0px 20px;
     }
-    .testimonySection {
-        padding: 0px 20px;
-        align-items: center;
-        .testimonyContantContainer {
-            flex-direction: column;
-        }
-
-    }
+ 
     .contactSection {
         padding: 0px 20px;
         align-items: center;
