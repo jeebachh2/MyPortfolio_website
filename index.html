@@ -1,138 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
-   
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jeebachh Kumar — Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    
-    <link rel="stylesheet" href="index.css"/>
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css"> 
 </head>
 <body>
-    <div class="navbar">
-        <a href="" class="navbarHeading">JEEBACHH KUMAR</a>
-        <div class="iconSectionContainer">
+  <main class="page" role="main">
 
-            <a href="https://github.com/jeebachh2">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
+    <!-- NAV -->
+    <header class="navbar" role="banner">
+      <a class="brand" href="#">JEEBACHH KUMAR</a>
+      <nav class="nav-links" role="navigation" aria-label="top">
+        <a href="#skills"><i class="fa-solid fa-code"></i><span> Skills</span></a>
+        <a href="#projects"><i class="fa-solid fa-diagram-project"></i><span> Projects</span></a>
+        <a href="#contactSection"><i class="fa-solid fa-envelope"></i><span> Contact</span></a>
+        <a href="https://github.com/jeebachh2" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jeebachh-kumar-575169328/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+      </nav>
+    </header>
 
-            <a href="https://www.linkedin.com/in/jeebachh-kumar-575169328/">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>Linkedin</span>
-            </a>
+    <!-- INTRO -->
+    <section class="intro" aria-labelledby="intro-heading">
+      <div class="intro-left">
+        <h1 id="intro-heading">Hi, I'm Jeebachh Kumar</h1>
+        <p>I build web apps with JavaScript, React.js and Node.js. I enjoy solving problems and creating projects that help people. Below are a few of my skills and projects — feel free to reach out!</p>
 
+        <div class="intro-links">
+          <a class="btn" href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
+          <a class="btn" href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+          <a class="btn" href="#contactSection"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
-        
+      </div>
+
+      <div class="profile">
+        <img src="pic of jeebachh.jpg" alt="Photo of Jeebachh Kumar" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid" role="list" aria-label="skills">
+        <div class="skill" role="listitem"><img src="./icons8-html-48.png" alt=""><strong>HTML</strong></div>
+        <div class="skill" role="listitem"><img src="./icons8-css-48.png" alt=""><strong>CSS</strong></div>
+        <div class="skill" role="listitem"><img src="./icons8-javascript-48.png" alt=""><strong>JavaScript</strong></div>
+        <div class="skill" role="listitem"><img src="./icons8-react-js-48.png" alt=""><strong>React.js</strong></div>
+        <div class="skill" role="listitem"><img src="./icons8-node-js-50.png" alt=""><strong>Node.js</strong></div>
+      </div>
+    </section>
+
+<section id="projects" class="project-section" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+    <p>Below are sample screenshots of projects I built. Click an image to view the live project. Use the dots to jump between them — the slider will autoplay and pause on hover.</p>
+  
+    <div class="slider-wrap" aria-hidden="false">
+      <div class="slider" role="region" aria-roledescription="carousel" aria-label="projects carousel">
+        <div class="track" id="track">
+          
+          <div class="slide">
+            <div class="card">
+              <a href="https://jeebachh2.github.io/LoginPageSlack/" target="_blank" rel="noopener">
+                <img src="./slack.png" alt="Slack login screenshot" loading="lazy">
+              </a>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="card">
+              <a href="https://jeebachh2.github.io/gmailClone/" target="_blank" rel="noopener">
+                <img src="./gmail.png" alt="Gmail screenshot" loading="lazy">
+              </a>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="card">
+              <a href="https://jeebachh2.github.io/HangMan_Word_gesh_game/" target="_blank" rel="noopener">
+                <img src="./HangMan.png" alt="Hangman game screenshot" loading="lazy">
+              </a>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="card">
+              <a href=" https://jeebachh2.github.io/Cross_Game/" target="_blank" rel="noopener">
+                <img src="./tic-tac-toe.png" alt="Tic tac toe game screenshot" loading="lazy">
+              </a>
+            </div>
+          </div>
+  
+          <div class="slide">
+            <div class="card">
+              <a href="https://jeebachh2.github.io/youtubeClone/" target="_blank" rel="noopener">
+                <img src="./youtube.png" alt="YouTube clone screenshot" loading="lazy">
+              </a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
     </div>
+  
+    <div class="dots" id="dots" aria-hidden="false" role="tablist"></div>
+  </section>
+  
 
-    <div class="intro-section">
-        <div class="intro-section-contant">
-             <h2>Hi, I'm Jeebachh kumar</h2>
-        <p>A passionate software developer with a strong foundation in (technologies like: - javascript, react.js, node.js, and Express.js). 
-            I njoy solving problems and building projects that make an impact. I worked  on personal project.
-             (crypto currency tracker, In this project you can track current price INR or USD) during full stack development course completeing time.
-             I'm eager to grow my skills, collaborate with others, and contribute to meaningful work. When i'm not coding, I enjoy cricket, watch reals, movies and time spend with my fiends
-            Feel free to check out my Work below or connect with me.</p>
-        <div class="links">
-            <a href="#skills">
-                <i class="fa-solid fa-code"></i>
-                <span>Skills</span>
-            </a>
-             <a href="#contactSection">
-               <i class="fa-solid fa-diagram-project"></i>
-                <span>Projects</span>
-            </a>
-            <a href="#contactSection">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Contact</span>
-            </a>
-            
+    <!-- CONTACT -->
+    <section id="contactSection" class="contact-section" aria-labelledby="contact-heading">
+      <div class="contact-card" role="region" aria-label="Contact form">
+        <h2 id="contact-heading">Contact Me</h2>
+
+        <div class="contact-grid">
+          <div class="contact-desc">
+            <p>If you'd like to contact me, fill out the form with your name, email and a short summary of your project — I'll get back to you as soon as I can. You can also message me via GitHub or LinkedIn.</p>
+            <p style="margin-top:12px;color:var(--muted)">Tip: include the best time to reach you and any links or references related to your project.</p>
+          </div>
+
+          <form id="contactForm" class="contact-form" onsubmit="submitForm(event)" novalidate>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+
+            <div>
+              <button class="submit-btn" type="submit">Send Message</button>
+            </div>
+          </form>
         </div>
-        </div>
-       
-        <div class="profile-image">
-            <img src="pic of jeebachh.jpg" alt="profile-image"/>
-        </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="skillssection" id="skills">
-        <h2>Skills</h2>
-        <p>My skill mention below  i am using in frontend HTML5, CSS, JavaScript,React.js, In Backend Node.js, Express.js, In Database MySQL,MongoDB and In Library Tailwind CSS, BootStrap.
-        </p>
-        <div class="dev-skills-container">
-            <div class="cells">
-                <img src="./icons8-html-48.png" alt=""/>
-                <span>Html</span>
-            </div>
-            <div class="cells">
-                <img src="./icons8-css-48.png" alt=""/>
-                <span>CSS</span>
-            </div>
-            <div class="cells">
-                <img src="./icons8-javascript-48.png" alt=""/>
-                <span>JavaScript</span>
-            </div>
-            <div class="cells">
-                <img src="./icons8-react-js-48.png" alt=""/>
-                <span>React.js</span>
-            </div>
-            <div class="cells">
-                <img src="./icons8-node-js-50.png" alt=""/>
-                <span>Node.js</span>
-            </div>
-        </div>
-    </div>
+    <div class="spacer" aria-hidden="true"></div>
+  </main>
 
-
-     <!-- <div class="projects" id="projects-skill">
-        <h2>Projects</h2>
-        <p>You can see my work here overview. 
-            if you can see my project in details so you click any pic,
-             and you go my github deploy link and see my performance.
-        </p>
-        <div class="dev-project-container">
-            <div class="images">
-                <img class="pic" src="./slack.png" alt=""/>
-                <img class="pic" src="./gmail.png" alt=""/>
-                <img class="pic" src="./HangMan.png" alt=""/>
-                <img class="pic" src="./tic-tac-toe.png" alt=""/>
-                <img class="pic" src="./youtube.png" alt=""/>
-                
-            </div>
-           
-        </div>
-    </div> -->
-
-
-
-    <div class="contactSection" id="contactSection">
-        <h2>Contacts</h2>
-        <div class="contactContentContainer">
-            <div class="contactTextContent">If you want to contact me so you can feel this form name, email and your project summary which you want discuss to me and you send me your request than we will discuss this project defenitely Thank you.
-             </div>
-            <div class="contactFormContent">
-                <span>Name</span>
-                <input type="text"/>
-                 <span>Email</span>
-                <input type="email"/>
-                <span>Message</span>
-                <textarea cols="30" rows="10"></textarea>
-                <button>Send Message</button>
-            </div>
-        </div>
-    </div>
-    
+ <script src="index.js"></script>
 </body>
 </html>
